@@ -40,7 +40,7 @@ public:
     
     // scalar multiplication
     Vec3 operator*(T f) const { return {x * f, y * f, z * f}; }
-    // cross-prduct of vectors
+    // (Hadamard) multiplication of vectors
     Vec3 operator*(const Vec3& v) const { return {x * v.x, y * v.y, z * v.z}; }
     // dot-product of vectors
     T dot(const Vec3& v) const { return x * v.x + y * v.y + z * v.z; }
